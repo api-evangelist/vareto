@@ -1,0 +1,29 @@
+generated: '2026-07-21'
+method: searched
+source: live HTTP probes of vareto.com hosts
+hosts:
+- host: https://vareto.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: https://www.vareto.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+- host: https://app.vareto.com
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    note: Returns the single-page-app HTML shell (catch-all route), not a valid
+      OIDC discovery JSON document; not saved as an artifact.
+notes: No published /.well-known/ discovery surface was found on any Vareto host.

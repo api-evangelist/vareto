@@ -1,0 +1,13 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.vareto.com/platform/security
+status_page: https://status.vareto.com/
+status_page_provider: Sorry™ (status.vareto.com CNAME 0a0afce6.sorryapp.com)
+versioning: null
+deprecation: null
+sla: null
+deprecated_operations: []
+notes: Vareto publishes a public system status page (linked from the platform
+  security page). No public API versioning, deprecation policy, or SLA
+  documentation was found; Vareto does not publish a public developer API
+  surface as of this pass.

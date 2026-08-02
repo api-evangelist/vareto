@@ -1,8 +1,26 @@
 aid: vareto
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/vareto.png
 name: Vareto
-description: 'Vareto is a company surfaced as a portfolio company of gv, menlo-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: Vareto is an AI-native financial planning and analysis (FP&A) platform
+  that helps finance teams build financial models, budgets, and forecasts — including
+  headcount and capacity planning, sales revenue forecasting, and P&L, balance sheet,
+  and cash flow modeling — with real-time multiplayer collaboration, executive and
+  board reporting, and data integrations spanning ERPs (NetSuite, SAP, QuickBooks,
+  Sage Intacct), HRIS platforms (Workday, ADP, Rippling, and 25+ more), CRMs
+  (Salesforce, HubSpot), data warehouses (Snowflake, BigQuery, Redshift), and
+  spreadsheets. Vareto is SOC 2 Type 2 attested with a public Drata trust center,
+  but does not currently publish a public developer API surface.
 url: https://raw.githubusercontent.com/api-evangelist/vareto/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Enterprise
+- Finance
+- FP&A
+- Financial Planning
+- Forecasting
+- Budgeting
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +48,36 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TrustCenter
+  url: security/vareto-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/vareto-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/vareto-domain-security.yml
+- type: Security
+  url: https://www.vareto.com/legal/responsible-disclosure-policy
+- type: Compliance
+  url: https://trust.vareto.com/
 - type: Website
-  url: http://vareto.com
+  url: https://www.vareto.com
+- type: Pricing
+  url: https://www.vareto.com/how-to-buy/pricing
+- type: Blog
+  url: https://www.vareto.com/blog
+- type: TermsOfService
+  url: https://www.vareto.com/legal/terms
+- type: PrivacyPolicy
+  url: https://www.vareto.com/legal/privacy
+- type: Login
+  url: https://app.vareto.com/
+- type: StatusPage
+  url: https://status.vareto.com/
+- type: Lifecycle
+  url: lifecycle/vareto-lifecycle.yml
+- type: LLMsTxt
+  url: llms/vareto-llms.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1

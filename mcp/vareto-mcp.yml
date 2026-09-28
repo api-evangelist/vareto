@@ -16,6 +16,10 @@ deployment:
 tools_count: 1
 tools:
 - name: authenticate
-  description: ''
+  description: Authenticate with the Vareto backend. Returns a session_id that must be passed to all subsequent
+    tool calls. Use auth_token="oauth:google" or auth_token="oauth:microsoft" to trigger a browser-based
+    login — a browser window will open for the
 tools_source: live tools/list via initialize handshake, 2026-09-12 (signals/audit_mcp_authorship.py --probe)
 authorship: provider
+descriptions_source: live tools/list (authorship probe or saved capture); filled by backfill-tools-from-authorship.py
+  --descriptions, 2026-09-28

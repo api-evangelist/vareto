@@ -1,0 +1,30 @@
+{
+  "endpoint": "https://mcp.vareto.com/",
+  "captured": "2026-10-20",
+  "method": "initialize + tools/list (anonymous, no tool called; roadmap#992)",
+  "protocol_version": "2024-11-05",
+  "server_info": {
+    "name": "mcp_server",
+    "version": "0.1.0"
+  },
+  "result": {
+    "tools": [
+      {
+        "description": "Authenticate with the Vareto backend. Returns a session_id that must be passed to all subsequent tool calls. Use auth_token=\"oauth:google\" or auth_token=\"oauth:microsoft\" to trigger a browser-based login — a browser window will open for the user to sign in, and the session will be created automatically. Alternatively, pass a Firebase ID token directly.",
+        "inputSchema": {
+          "properties": {
+            "auth_token": {
+              "description": "Use \"oauth:google\" or \"oauth:microsoft\" to log in via browser (recommended). Alternatively, pass a Firebase ID token directly.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "auth_token"
+          ],
+          "type": "object"
+        },
+        "name": "authenticate"
+      }
+    ]
+  }
+}
